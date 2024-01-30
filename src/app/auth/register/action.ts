@@ -45,7 +45,7 @@ export const register = async (data: RegisterFormSchemaType) => {
   await sendEmail({
     to: data.email,
     subject: '注册成功',
-    html: `点击激活账号 <a href="http://localhost:3000/auth/activate?token=${token}">激活</a>`,
+    html: `点击激活账号 <a href="https://auth.fluxyadmin.cn/auth/activate?token=${token}">激活</a>`,
   });
 
 };
